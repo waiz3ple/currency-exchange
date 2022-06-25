@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Money Converter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, minimal-ui, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body class="container-fluid">
+    <section class="converter">
+     <div class="row">
+          <div class="col-sm-3 col-xs-12  hidden-xs border"></div>
+          <div class="col-sm-6 col-xs-12   border">
+          <form class="converter-form">
+            <span class="input-title">You send</span>
+            <div class="form-group">
+              <input type="text" placeholder="1000" id="sending-amount">
+              <select name="sending-currency">
+                  <option value="USD" data-symbol="$">United State $</option>
+              </select>
+          </div>
+          </form>
+          </div>
+          <div class="col-sm-3 col-xs-12  hidden-xs border"></div>
+     </div>
+     <div class="row">
+          <div class="col-sm-3 col-xs-12  hidden-xs border"></div>
+          <div class="col-sm-6 col-xs-12   border">
+            <form class="converter-form">
+              <span class="input-title">Recipient gets</span>
+              <div class="form-group">
+                <input type="text" placeholder="1000" id="receiving-amount">
+                <select name="receiving-currency" id="">
+                    <option value="USD" data-symbol="$">United State $</option>
+                </select>
+               </div>
+               <div class="error-message "><!-- error message here --></div>
+            </form>
+          </div>
+          <div class="col-sm-3 col-xs-12  hidden-xs border"></div>
+     </div>
+     <div class="row">
+       <div class="col-sm-2 col-xs-12 hidden-xs border"></div>
+       <div class="col-sm-6 col-xs-12 show-detail border">
+         <!-- <div class="trans">
+           <h4 class="trans-title">Transaction Detail</h4>
+            <ul class="trans-list">
+              <li class="sending">Sending<span>36,484</span></li>
+              <li class="rate">Rate<span>294292</span></li>
+              <li class="fee">Fee<span>738834</span></li>
+              <li class="tax">Tax<span>46,828,28</span></li>
+              <li class="recipient-gets">Recipient Gets<span>27,984</span></li>
+              <li class="total">Total<span>29,49</span></li>
+            </ul>
+         </div>
+       </div> -->
+       <div class="col-sm-4 col-xs-12 hidden-xs border"></div>
+     </div>
+
+    </section>
+</body>
+</html>
